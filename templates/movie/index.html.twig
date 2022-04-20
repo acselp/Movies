@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MovieController!{% endblock %}
+
+{% block body %}
+    <video width="320" height="240" controls>
+        <source src="/files/video{{ asset(video_path) }}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+{% endblock %}
